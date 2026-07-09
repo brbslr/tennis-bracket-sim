@@ -1,15 +1,15 @@
 # Mix Tennis Grand Slam Draw Simulator
 
-Grand Slam mixed-doubles tennis simulation and prediction
-game built on real historical Grand Slam data.
+Fantasy Grand Slam mixed-doubles tennis simulation and prediction 
+game (drafting from the men's and women's singles quarterfinalists of the corresponding grandslam tournament) built on real historical Grand Slam data.
 
 ## Current status: V0 — Mixed Doubles Fantasy Simulator (Wimbledon 2026)
 
-The current version is hardcoded to the real Wimbledon 2026 quarterfinalists.
-The user drafts one male + one female QF player as their fantasy mixed
+The current version is hardcoded to the real Wimbledon 2026 men's and women's singles quarterfinalists.
+One male + one female QF player picked as the fantasy mixed
 doubles team; the remaining 14 players are randomly paired into 7 more teams;
 an 8-team bracket is simulated based on team strength (average rank of the
-two players); the user can only simulate once per day.
+two players); You can simulate once per day.
 
 ## Files (current version)
 
