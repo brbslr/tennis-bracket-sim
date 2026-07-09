@@ -1,7 +1,7 @@
-# Mix Tennis Grand Slam Draw Simulator
+# Fantasy GS Mix Tennis Sim
 
 Fantasy Grand Slam mixed-doubles tennis simulation and prediction 
-game (drafting from the men's and women's singles quarterfinalists of the corresponding grandslam tournament) built on real historical Grand Slam data.
+game, drafting from the men's and women's singles quarterfinalists of the corresponding grandslam tournament, built on real historical Grand Slam data.
 
 ## Current status: V0 — Mixed Doubles Fantasy Simulator (Wimbledon 2026)
 
