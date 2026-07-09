@@ -1,0 +1,25 @@
+{
+  "tournament": "Wimbledon 2026",
+  "round": "Quarterfinalists (Men's Singles + Women's Singles)",
+  "source": "Real Wimbledon 2026 QF fields, seeds used as rank proxy (Britwatch Sports, WTA seed list, LBC). Unseeded players given estimated ranks.",
+  "men": [
+    { "name": "Jannik Sinner", "rank": 1 },
+    { "name": "Alexander Zverev", "rank": 2 },
+    { "name": "Felix Auger-Aliassime", "rank": 3 },
+    { "name": "Taylor Fritz", "rank": 6 },
+    { "name": "Novak Djokovic", "rank": 7 },
+    { "name": "Flavio Cobolli", "rank": 9 },
+    { "name": "Jan-Lennard Struff", "rank": 45, "_estimated": true },
+    { "name": "Arthur Fery", "rank": 90, "_estimated": true }
+  ],
+  "women": [
+    { "name": "Jessica Pegula", "rank": 4 },
+    { "name": "Coco Gauff", "rank": 7 },
+    { "name": "Linda Noskova", "rank": 9 },
+    { "name": "Karolina Muchova", "rank": 10 },
+    { "name": "Marta Kostyuk", "rank": 12 },
+    { "name": "Jasmine Paolini", "rank": 13 },
+    { "name": "Naomi Osaka", "rank": 14 },
+    { "name": "Elise Mertens", "rank": 25 }
+  ]
+}
