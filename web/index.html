@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mixed Draft — Fantasy Grand Slam Mixed Doubles</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="eyebrow">Built from real Grand Slam draws, 1990&ndash;2026</p>
+    <h1 class="wordmark">MIXED<span>DRAFT</span></h1>
+    <p class="tagline">Draft a real quarterfinalist pair. The rest of the field is random. See who takes the cup.</p>
+  </div>
+</header>
+
+<main class="program">
+
+  <!-- STEP 1: Tournament -->
+  <section class="card" id="step-tournament">
+    <div class="step-label"><span class="step-num">01</span> Choose a tournament</div>
+    <input type="text" id="tournament-search" class="search-input" placeholder="Search e.g. “Wimbledon” or “2015”" autocomplete="off">
+    <div id="tournament-results" class="result-list" aria-live="polite"></div>
+    <button id="tournament-selected" class="selected-chip" hidden></button>
+  </section>
+
+  <!-- STEP 2: Draft -->
+  <section class="card" id="step-draft" hidden>
+    <div class="step-label"><span class="step-num">02</span> Draft your team</div>
+
+    <div class="draft-column">
+      <p class="draft-role">Male quarterfinalist</p>
+      <div id="men-list" class="player-list"></div>
+    </div>
+
+    <div class="draft-column">
+      <p class="draft-role">Female quarterfinalist</p>
+      <div id="women-list" class="player-list"></div>
+    </div>
+  </section>
+
+  <!-- STEP 3: Simulate -->
+  <section class="card" id="step-simulate" hidden>
+    <div class="step-label"><span class="step-num">03</span> Run the draw</div>
+    <p class="your-team" id="your-team-line"></p>
+    <button id="simulate-btn" class="btn-primary">Simulate the bracket</button>
+    <p class="legend">
+      <span class="est-badge">est.</span> = no career match record on file; strength estimated from ranking instead
+    </p>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="card" id="step-results" hidden>
+    <div class="step-label"><span class="step-num">Draw</span> Results</div>
+    <div id="bracket" class="bracket"></div>
+    <div id="champion-banner" class="champion-banner" hidden></div>
+    <button id="reset-btn" class="btn-secondary" hidden>Draft a new team</button>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Data: Jeff Sackmann's tennis_atp / tennis_wta match records (CC BY&#8209;NC&#8209;SA 4.0), via public Kaggle mirrors. Some players' strength is estimated from ranking where career match data isn't available. Built as a practice project &mdash; not affiliated with the ATP, WTA, or any Grand Slam.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
