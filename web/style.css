@@ -342,6 +342,13 @@ body {
   font-family: var(--font-body);
   font-size: 14px;
 }
+.champion-banner .cb-elimination {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: rgba(242, 238, 225, 0.72);
+  margin: 6px 0 0;
+}
+.champion-banner.won .cb-elimination { color: rgba(20, 33, 27, 0.65); }
 .champion-banner.won { background: var(--gold); color: var(--ink); }
 .champion-banner.won .cb-label { color: var(--purple); }
 

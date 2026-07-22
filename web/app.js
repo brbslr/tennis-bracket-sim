@@ -236,12 +236,28 @@ function renderResults(rounds, champion) {
   });
 
   const userWon = champion.isUserTeam;
+
+  let eliminationInfo = "";
+  if (!userWon) {
+    for (let roundIdx = 0; roundIdx < rounds.length; roundIdx++) {
+      const lostMatch = rounds[roundIdx].find(
+        (m) => (m.teamA.isUserTeam || m.teamB.isUserTeam) && m.winner.isUserTeam !== true
+      );
+      if (lostMatch) {
+        const opponent = lostMatch.teamA.isUserTeam ? lostMatch.teamB : lostMatch.teamA;
+        eliminationInfo = `Eliminated in the ${roundLabel(roundIdx, rounds.length)} by ${opponent.displayNames.join(" / ")}.`;
+        break;
+      }
+    }
+  }
+
   championBanner.hidden = false;
   championBanner.className = "champion-banner" + (userWon ? " won" : "");
   championBanner.innerHTML = `
     <p class="cb-label">Champions</p>
     <p class="cb-names">${champion.displayNames.join(" / ")}</p>
     <p class="cb-result">${userWon ? "Your team won! 🏆" : "Your team did not win this time."}</p>
+    ${eliminationInfo ? `<p class="cb-elimination">${eliminationInfo}</p>` : ""}
   `;
 
   resetBtn.hidden = false;
